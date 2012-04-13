@@ -14,7 +14,6 @@
 		055CBBDE14A9D8D4009710F8 /* BSAFRestClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 055CBBD014A9D8D4009710F8 /* BSAFRestClient.m */; };
 		055CBBE214A9D8D4009710F8 /* NSMutableURLRequest+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 055CBBD414A9D8D4009710F8 /* NSMutableURLRequest+AFNetworking.m */; };
 		055CBBE414A9D8D4009710F8 /* NSString+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 055CBBD614A9D8D4009710F8 /* NSString+AFNetworking.m */; };
-		055CBBE814A9D8EA009710F8 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 055CBBE614A9D8EA009710F8 /* JSONKit.m */; };
 		055CBBEC14A9D8FB009710F8 /* BSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 055CBBEA14A9D8FB009710F8 /* BSReachability.m */; };
 		055CBC0714A9E0A5009710F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055CBC0614A9E0A5009710F8 /* Foundation.framework */; };
 		055CBC0914A9E0B0009710F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 055CBC0814A9E0B0009710F8 /* UIKit.framework */; };
@@ -801,7 +800,6 @@
 				055CBBDE14A9D8D4009710F8 /* BSAFRestClient.m in Sources */,
 				055CBBE214A9D8D4009710F8 /* NSMutableURLRequest+AFNetworking.m in Sources */,
 				055CBBE414A9D8D4009710F8 /* NSString+AFNetworking.m in Sources */,
-				055CBBE814A9D8EA009710F8 /* JSONKit.m in Sources */,
 				055CBBEC14A9D8FB009710F8 /* BSReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

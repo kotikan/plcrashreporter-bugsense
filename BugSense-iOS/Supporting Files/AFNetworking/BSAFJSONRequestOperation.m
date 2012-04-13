@@ -70,7 +70,8 @@ static dispatch_queue_t json_request_operation_processing_queue() {
             if (!statusCodeAcceptable || !contentTypeAcceptable) {
                 NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
                 [userInfo setValue:[NSHTTPURLResponse localizedStringForStatusCode:[response statusCode]] forKey:NSLocalizedDescriptionKey];
-                [userInfo setValue:[request URL] forKey:NSURLErrorFailingURLErrorKey];
+                [userInfo setValue:[request URL] forKey:@"NSErrorFailingURLKey"];
+                // The constant NSURLErrorFailingURLErrorKey is iOS 4+ only
                 
                 error = [[[NSError alloc] initWithDomain:NSURLErrorDomain code:[response statusCode] userInfo:userInfo] autorelease];
             }

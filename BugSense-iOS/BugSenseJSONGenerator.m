@@ -299,6 +299,9 @@
         id telephonyNetworkInfo = [[[telephonyNetworkInfoClass alloc] init] autorelease];
         id carrier = objc_msgSend(telephonyNetworkInfo, sel_getUid("subscriberCellularProvider"));
         NSString *carrierName = (NSString *)objc_msgSend(carrier, sel_getUid("carrierName"));
+        if (carrierName == nil) {
+            carrierName = kCarrierNotFoundStatus;
+        }
         return carrierName;
     } else {
         return kCarrierNotFoundStatus;
@@ -570,8 +573,9 @@
         NSString *jsonString = 
             [[rootDictionary bs_JSONString] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         return [jsonString dataUsingEncoding:NSUTF8StringEncoding];
-    } @catch (NSException *exception) {
+    } @catch (NSException *jsonException) {
         NSLog(kJSONErrorMsg);
+        NSLog(@"Name: %@, Reason: %@", [jsonException name], [jsonException reason]);
         return nil;
     }
 }
@@ -692,6 +696,7 @@
         return [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     } @catch (NSException *jsonException) {
         NSLog(kJSONErrorMsg);
+        NSLog(@"Name: %@, Reason: %@", [jsonException name], [jsonException reason]);
         return nil;
     }
 }

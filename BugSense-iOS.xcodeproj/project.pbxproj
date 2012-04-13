@@ -67,6 +67,7 @@
 		05FCB7511492A43800D1B469 /* BugSenseCrashController.h in Headers */ = {isa = PBXBuildFile; fileRef = 05086E92143BBFC6008A8411 /* BugSenseCrashController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05FCB7531492A45F00D1B469 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 058D4C4C143BC2EE002A01CA /* InfoPlist.strings */; };
 		05FCB7DD14966D6D00D1B469 /* BugSenseSymbolicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FCB7DB14966D6D00D1B469 /* BugSenseSymbolicator.m */; };
+		C5F51A341538612F00C35F90 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 055CBBE614A9D8EA009710F8 /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -801,6 +802,7 @@
 				055CBBE214A9D8D4009710F8 /* NSMutableURLRequest+AFNetworking.m in Sources */,
 				055CBBE414A9D8D4009710F8 /* NSString+AFNetworking.m in Sources */,
 				055CBBEC14A9D8FB009710F8 /* BSReachability.m in Sources */,
+				C5F51A341538612F00C35F90 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
